@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Početna</title>
+</head>
+<body>
+
+Forma(1. i 5. zadatak):
+<form method="POST" action="Zbroj">
+  First Number: <input type="number" name="FirstNumber" step=0.01><br>
+  Second Number: <input type="number" name="SecondNumber" step=0.01><br>
+  <input type="submit" value="Submit">
+</form>
+<br><br>
+(Nakon pritiska se uvijek preusmjerava na net.hr, jer se u formi uvijek šalje
+parametar sa ili bez vrijednosti. Za error page, nadodati /Redirect, koji bi bio bez
+parametara.)
+Forma(2.zadatak):
+<form method="GET" action="Redirect">
+  First Number: <input type="text" name="param"><br>
+  <input type="submit" value="Submit">
+</form>
+<br><br>
+
+Forma(3.zadatak):
+<form action="Date.jsp">
+  <input type="submit" value="Show Date">
+</form>
+
+<br><br>
+
+Forma(4.zadatak):
+<form action="Random.jsp">
+  <input type="submit" value="Show Random">
+</form>
+
+<br><br>
+
+Forma(6. 7. 9. zadatak):
+<form action="CreateBeans">
+  <input type="submit" value="Create Beans">
+</form>
+
+<br><br>
+
+Forma (8. zadatak)
+<form action="Cookies">
+	<input type="submit" value="Try cookies">
+</form>
+
+<br>
+
+Forma (10. zadatak)
+<form action="CustomTagView.jsp">
+	<input type="submit" value="Show me Custom tags">
+</form>
+
+</body>
+</html>

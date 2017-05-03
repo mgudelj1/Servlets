@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>TestProject</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>Obrada</servlet-name>
+    <servlet-class>com.example.web.Prvi</servlet-class>
+    <init-param>
+      <param-name>ServletMail</param-name>
+      <param-value>mgudelj1@vip.hr</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Obrada</servlet-name>
+    <url-pattern>/Zbroj</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Preusmjeravanje</servlet-name>
+    <servlet-class>com.example.web.Drugi</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Preusmjeravanje</servlet-name>
+    <url-pattern>/Redirect</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Beans</servlet-name>
+    <servlet-class>com.example.web.JavaBean</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Beans</servlet-name>
+    <url-pattern>/CreateBeans</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Cooks</servlet-name>
+  	<servlet-class>com.example.web.CookieTest</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Cooks</servlet-name>
+  	<url-pattern>/Cookies</url-pattern>
+  </servlet-mapping>
+  
+  <filter>
+  	<filter-name>BFilter</filter-name>
+  	<filter-class>com.example.web.BeanFilter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+  	<filter-name>BFilter</filter-name>
+  	<url-pattern>/CreateBeans</url-pattern>
+  </filter-mapping>
+  
+  
+  <error-page>
+    <error-code>404</error-code>
+    <location>/ErrorPage.jsp</location>
+  </error-page>
+  <context-param>
+    <param-name>ContextMail</param-name>
+    <param-value>marko.gudelj@fer.hr</param-value>
+  </context-param>
+</web-app>

@@ -1,0 +1,19 @@
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2eeweb-app_2_4.xsd"
+	version="2.4">
+
+	
+
+  <tlib-version>1.2</tlib-version>
+
+  <short-name>tags</short-name>
+  <uri>Custom</uri>
+
+  <tag>
+    <description>Worst use of tagggzzzz</description>
+    <name>PrintStudents</name>
+    <tag-class>com.example.model.CustomTag</tag-class>
+    <body-content>empty</body-content>
+  </tag>
+</taglib>
